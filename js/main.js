@@ -1,1 +1,27 @@
-/*aquí va tu código*/
+function init(){
+	var button = document.getElementById("boton");
+	button.addEventListener("click", guardar);
+	guardar();	
+}
+
+function guardar(){
+	var clave = document.getElementById("clave").value;
+	var valor = document.getElementById("valor").value;
+
+	sessionStorage.setItem(clave, valor);
+
+	var contenedor = document.getElementById("historial");
+	contenedor.innerHTML = "";
+	for(var i = 0; i < sessionStorage.length; i++){
+		var kei = sessionStorage.key(i);
+		var valuee = sessionStorage.getItem(kei);
+
+		var elemento = document.createElement('p');
+		var contenido1 = document.createTextNode(kei);
+		elemento.appendChild(contenido1);
+		elemento.setAttribute('aling', 'center');
+		document.getElementById('historial').appendChild(elemento);
+	}
+}
+
+init();
