@@ -39,7 +39,11 @@ function clean(){
 }
 
 function limpiarTodo() {
-	sessionStorage.setItem(clave, valor);
-	sessionStorage.clear();
+	var cajaComentarios = document.getElementById("historial");
+	cajaComentarios.innerHTML = "";
+}
+
+function limpiarProfundo(){
+	localStorage.clear();
 }
 clean();
