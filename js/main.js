@@ -22,6 +22,8 @@ function guardar(){
 		var contenido2 = document.createTextNode(valuee);
 		elemento1.appendChild(contenido1);
 		elemento2.appendChild(contenido2);
+		elemento1.setAttribute("class", "nombre");
+		elemento2.setAttribute("class", "comentario");
 		document.getElementById('historial').appendChild(elemento1);
 		document.getElementById('historial').appendChild(elemento2);
 	}
