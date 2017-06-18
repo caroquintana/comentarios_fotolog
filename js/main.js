@@ -18,8 +18,9 @@ function guardar(){
 
 		var elemento = document.createElement('p');
 		var contenido1 = document.createTextNode(kei);
+		var contenido2 = document.createTextNode(valuee);
 		elemento.appendChild(contenido1);
-		elemento.setAttribute('aling', 'center');
+		elemento.appendChild(contenido2);
 		document.getElementById('historial').appendChild(elemento);
 	}
 }
