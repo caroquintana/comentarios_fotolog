@@ -30,3 +30,16 @@ function guardar(){
 }
 
 init();
+
+
+function clean(){
+	var botonLimpiador = document.getElementById("limpiar");
+	botonLimpiador.addEventListener("click", limpiarTodo);
+	limpiarTodo();	
+}
+
+function limpiarTodo() {
+	sessionStorage.setItem(clave, valor);
+	sessionStorage.clear();
+}
+clean();

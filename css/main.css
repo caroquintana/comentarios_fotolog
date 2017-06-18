@@ -61,5 +61,22 @@ footer{
 
 /* Estilos propios */
 
+h3.nombre{
+  text-transform: uppercase;
+  background-color: lavender;
 
+}
+p.comentario{
+  text-transform: lowercase;
+  background-color: lavenderblush;
+}
 
+button{
+  background-color: hotpink;
+  color: white;
+  border: 1px solid coral;
+}
+button:hover{
+  background-color: coral;
+  color: white;
+}
