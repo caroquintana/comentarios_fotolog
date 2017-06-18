@@ -45,5 +45,7 @@ function limpiarTodo() {
 
 function limpiarProfundo(){
 	localStorage.clear();
+	localStorage.clear();
+	sessionStorage.removeItem(cajaComentarios);
 }
 clean();

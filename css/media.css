@@ -1,0 +1,11 @@
+@media (max-width: 991px) {
+  .otras {
+   width: 18%;
+   display: inline-block;
+  }
+}
+@media (max-width: 480px) {
+  .otras {
+    display: none;
+  }
+}
