@@ -16,12 +16,14 @@ function guardar(){
 		var kei = sessionStorage.key(i);
 		var valuee = sessionStorage.getItem(kei);
 
-		var elemento = document.createElement('p');
+		var elemento1 = document.createElement('h3');
+		var elemento2 = document.createElement('p');
 		var contenido1 = document.createTextNode(kei);
 		var contenido2 = document.createTextNode(valuee);
-		elemento.appendChild(contenido1);
-		elemento.appendChild(contenido2);
-		document.getElementById('historial').appendChild(elemento);
+		elemento1.appendChild(contenido1);
+		elemento2.appendChild(contenido2);
+		document.getElementById('historial').appendChild(elemento1);
+		document.getElementById('historial').appendChild(elemento2);
 	}
 }
 
